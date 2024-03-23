@@ -1,0 +1,21 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "files.exclude": {
+    "node_modules": true,
+    ".next/": true,
+    "**/.vercel": true,
+    "**/next-env.d.ts": true,
+    "**/.vscode": true,
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "tv\\((([^()]*|\\([^()]*\\))*)\\)", // TODO: why? Maybe tailwind variants or something?
+    "[\"'`]([^\"'`]*).*?[\"'`]", // TODO: why?
+    "class:\\s*?[\"'`]([^\"'`]*).*?,", // for TipTap classes
+  ]
+}
